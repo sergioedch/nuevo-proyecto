@@ -1,0 +1,119 @@
+Informe del paquete
+
+-----------------------------------------------------------------------------
+Documento:
+Nombre: PW-Q26.pdf
+Modo de color: Color RGB
+Perfil de color: ninguno
+Unidades de regla: p’xeles
+Dimensiones de la mesa de trabajo: 1104.8314 px x 1174.1785 px
+Mostrar im‡genes en modo contorno: Desactivado
+Resaltar fuentes sustituidas: Desactivado
+Resaltar glifos sustituidos: Desactivado
+Conservar capacidad de edici—n de texto
+Simular papel de color: Desactivado
+
+-----------------------------------------------------------------------------
+Objetos de tintas planas:
+
+-----------------------------------------------------------------------------
+Fuentes no disponibles:Ninguno
+
+-----------------------------------------------------------------------------
+Fuentes protegidas no empaquetadas:
+Montserrat Light (Adobe Fonts)
+Montserrat Regular (Adobe Fonts)
+Montserrat SemiBold (Adobe Fonts)
+Montserrat Bold (Adobe Fonts)
+Montserrat Bold Italic (Adobe Fonts)
+
+-----------------------------------------------------------------------------
+Fuentes:
+Montserrat Thin (TrueType)
+Montserrat Light (TrueType)
+Montserrat Regular (TrueType)
+Montserrat Bold (TrueType)
+Monument Extended Regular (OTF)
+Monument Extended Ultrabold (OTF)
+
+-----------------------------------------------------------------------------
+Fuentes incrustadas:
+Ninguno
+
+-----------------------------------------------------------------------------
+Enlaces no disponibles:
+Ninguno
+
+-----------------------------------------------------------------------------
+Im‡genes enlazadas:
+
+/Volumes/HD710 PRO/Trabajos/Best reference/2025/Redes/QUALYLAB/Logos/Logos marcas/PNG/Logo-con-fondo-grande.png
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 143K, 237 por 155 p’xeles
+Dimensiones: 188.889 por 123.535 puntos 
+Resoluci—n: 90.339 por 90.339 p’xeles por pulgada
+
+
+/Volumes/HD710 PRO/Trabajos/Best reference/2025/Redes/QUALYLAB/Logos/Logos marcas/PNG/epideme-care-s-COLOR-transparente.png
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 8789K, 1500 por 1500 p’xeles
+Dimensiones: 170.961 por 170.961 puntos 
+Resoluci—n: 631.721 por 631.721 p’xeles por pulgada
+
+
+/Volumes/HD710 PRO/Trabajos/Best reference/2026/QUALYLAB/Pagina web/national-cancer-institute-XknuBmnjbKg-unsplash.jpg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 227812K, 10800 por 7200 p’xeles
+Dimensiones: 1334.317 por 889.545 puntos 
+Resoluci—n: 582.77 por 582.77 p’xeles por pulgada
+
+
+/Volumes/HD710 PRO/Trabajos/Best reference/2026/QUALYLAB/Cartel/WhatsApp Image 2026-06-05 at 12.33.25.jpeg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 3390K, 904 por 1280 p’xeles
+Dimensiones: 574.904 por 814.023 puntos 
+Resoluci—n: 113.215 por 113.215 p’xeles por pulgada
+
+
+/Volumes/HD710 PRO/Trabajos/Best reference/2026/QUALYLAB/Cartel/mathurin-napoly-matnapo-Ab4aZC723II-unsplash.jpg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 39836K, 3009 por 4519 p’xeles
+Dimensiones: 435.741 por 654.407 puntos 
+Resoluci—n: 497.195 por 497.195 p’xeles por pulgada
+
+
+/Volumes/HD710 PRO/Trabajos/Best reference/2026/QUALYLAB/Pagina web/pexels-pavel-danilyuk-8439002.jpg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 52721K, 3466 por 5192 p’xeles
+Dimensiones: 705.582 por 1056.948 puntos 
+Resoluci—n: 353.683 por 353.682 p’xeles por pulgada
+
+
+/Volumes/HD710 PRO/Trabajos/Best reference/2026/QUALYLAB/Cartel/Gemini_Generated_Image_ts04kets04kets04.png
+Tipo: RGB transparente
+Bits por p’xel: 32
+Canales: 4
+Tama–o: 4162K, 1264 por 843 p’xeles
+Dimensiones: 1796.265 por 1197.984 puntos 
+Resoluci—n: 50.665 por 50.665 p’xeles por pulgada
+
+
+/Volumes/HD710 PRO/Trabajos/Best reference/2026/QUALYLAB/Pagina web/national-cancer-institute-XknuBmnjbKg-unsplash.jpg
+Tipo: RGB
+Bits por p’xel: 24
+Canales: 3
+Tama–o: 227812K, 10800 por 7200 p’xeles
+Dimensiones: 1334.317 por 889.545 puntos 
+Resoluci—n: 582.77 por 582.77 p’xeles por pulgada

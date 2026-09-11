@@ -1,0 +1,26 @@
+@import "bootstrap/scss/bootstrap";
+
+
+// Fondo con imagen y degradado blanco hacia abajo
+.hero-background {
+  // Asegúrate de poner tu imagen real en src/img/fondo-lab.jpg
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.4) 0%, rgba(255,255,255,1) 90%), url('../img/fondo-lab.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+}
+
+// Menú estilo píldora con fondo rosado claro
+.nav-pildora {
+  background-color: rgba(248, 220, 225, 0.6); // Un tono rosado transparente
+  backdrop-filter: blur(5px); // Efecto cristal
+}
+
+// Ajustes especiales para la caja principal
+.caja-qualylab {
+  // Para que el borde sea súper redondo como en tu imagen
+  border-radius: 2rem !important; 
+  // Efecto cristal para que se note la imagen de fondo pero se lea el texto
+  backdrop-filter: blur(8px); 
+}
