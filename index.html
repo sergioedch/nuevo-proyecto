@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QUALYLAB 2026 - BEST</title>
 </head>
+
 <body class="bg-light">
 
     <!-- Contenedor con la imagen de fondo y el degradado -->
     <div class="hero-background pb-5">
-        
+
         <!-- BARRA DE NAVEGACIÓN -->
         <nav class="navbar navbar-expand-lg pt-4 mb-5">
             <div class="container d-flex justify-content-between align-items-center">
-                
+
                 <!-- Logo Izquierda -->
                 <a class="navbar-brand" href="#">
                     <!-- Reemplaza con la ruta de tu logo -->
-                    <img src="/src/img/logo-best.png" alt="BEST" height="50">
+                    <img src="https://www.bestreference.com.mx/imgs/logo-best.png" alt="BEST" height="50">
                 </a>
 
                 <!-- Botón hamburguesa para celular -->
@@ -34,88 +36,365 @@
                         <li class="nav-item"><a class="nav-link text-dark" href="#">Eventos</a></li>
                         <li class="nav-item"><a class="nav-link text-dark" href="#">Contacto</a></li>
                         <li class="nav-item ms-2">
-                            <span class="badge rounded-pill border border-danger text-danger bg-transparent p-2">ES v</span>
+                            <span class="badge rounded-pill border border-danger text-danger bg-transparent p-2">ES
+                                v</span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Icono Carrito Derecha (Oculto en celular para mantener el diseño) -->
                 <div class="d-none d-lg-block">
-                    <a href="#" class="text-danger fs-4 text-decoration-none">
-                        <i class="bi bi-cart"></i> <!-- Requiere Bootstrap Icons -->
-                        🛒
+                    <a href="#" class="text-danger text-decoration-none">
+
+                        <svg width="40" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+
+                            <!-- Rueda izquierda -->
+                            <circle cx="11" cy="20.5" r="1" fill="none" stroke="#dc3545" stroke-width="1.3" />
+
+                            <!-- Rueda derecha -->
+                            <circle cx="17" cy="20.5" r="1" fill="none" stroke="#dc3545" stroke-width="1.3" />
+
+                            <!-- Carrito -->
+                            <path d="M3 3H5.32a1 1 0 0 1 .93.63L10 13 8.72 15.55A1 1 0 0 0 9.62 17H19" fill="none"
+                                stroke="#dc3545" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+
+                            <!-- Canasta -->
+                            <polyline points="7.2 6 20.8 6 21 6 18.2 13 10 13" fill="none" stroke="#dc3545"
+                                stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+
+                        </svg>
+
                     </a>
                 </div>
+
             </div>
         </nav>
 
-        <!-- SECCIÓN PRINCIPAL (El Cuadro) -->
-        <main class="container">
+        <header class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <!-- Cuadro con borde grueso y redondeado -->
-                    <div class="caja-qualylab border border-dark border-3 rounded-5 p-4 p-md-5 bg-white bg-opacity-75 shadow-sm position-relative overflow-hidden">
-                        
-                        <!-- Elemento gráfico (garabato azul) -->
-                        <div class="garabato-azul position-absolute top-0 end-0 mt-3 me-3 opacity-50">
-                            <!-- Aquí puedes poner la imagen del garabato azul -->
-                            <img src="/src/img/doodle.png" alt="" width="120">
+                <div
+                    class="caja-qualylab border border-dark border-3 rounded-5 p-4 p-md-5 bg-white bg-opacity-10 shadow-sm position-relative overflow-hidden">
+
+                    <!-- Elemento gráfico (garabato azul) -->
+                    <div class="garabato-azul position-absolute top-0 end-0 mt-3 me-3 opacity-50">
+                        <!-- Aquí puedes poner la imagen del garabato azul -->
+                        <img src="/src/img/doodle.png" alt="" width="120">
+                    </div>
+
+                    <div class="row align-items-center mt-3">
+                        <!-- El número 2 gigante -->
+                        <div class="col-md-4 text-center text-md-end pr-md-0">
+                            <h1 class=" text-black lh-1 font-monument" style="font-size: 10rem;">2</h1>
                         </div>
 
-                        <div class="row align-items-center mt-3">
-                            <!-- El número 2 gigante -->
-                            <div class="col-md-4 text-center text-md-end pr-md-0">
-                                <h1 class="display-1 fw-bold text-dark lh-1" style="font-size: 10rem;">2</h1>
-                            </div>
-                            
-                            <!-- El texto del congreso -->
-                            <div class="col-md-8 text-center text-md-start ps-md-0">
-                                <h2 class="display-5 fw-bold mb-0">do</h2>
-                                <h3 class="fw-bold lh-sm mb-3">
-                                    Congreso Nacional de<br>
-                                    Acreditación, Calidad y<br>
-                                    Salud Pública para<br>
-                                    Laboratorios
-                                </h3>
-                                <button class="btn btn-outline-dark rounded-pill px-4 py-2 fw-semibold">
-                                    Inscríbete aquí ↗
-                                </button>
-                            </div>
+                        <!-- El texto del congreso -->
+                        <div class="col-md-8 font-monument text-center text-black text-md-start ps-md-0">
+                            <h2 class="display-5 mb-0">do</h2>
+                            <h3 class="lh-sm mb-3">
+                                Congreso Nacional de<br>
+                                Acreditación, Calidad y<br>
+                                Salud Pública para<br>
+                                Laboratorios
+                            </h3>
+                            <button class="btn btn-outline-dark rounded-pill px-4 py-2 font-montserrat">
+                                Inscríbete aquí
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="ms-1">
+                                    <path d="M5 19L19 5M19 5H9M19 5V15" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
                         </div>
+                    </div>
 
-                        <!-- Texto QUALYLAB inferior -->
-                        <div class="text-center mt-5">
-                            <h2 class="fw-bold text-dark m-0" style="font-size: 3.5rem; letter-spacing: 2px;">
-                                QUALYLAB®
-                            </h2>
-                        </div>
+                    <!-- Texto QUALYLAB inferior -->
+                    <div class="text-center mt-5">
+                        <h2 class="text-black m-0 font-monument" style="font-size: 3.5rem; letter-spacing: 2px;">
+                            QUALYLAB®
+                        </h2>
                     </div>
                 </div>
             </div>
-        </main>
+        </header>
     </div>
 
-    <!-- SECCIÓN DE TEXTO INTRODUCTORIO -->
-    <section class="container my-5 text-center bg-white">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <p class="lead text-secondary fs-5" style="text-align: justify; text-align-last: center;">
-                    QUALYLAB 2026 es el encuentro que reúne a directivos, responsables de calidad, 
-                    profesionales técnicos e investigadores del sector salud, acreditación y evaluación de 
-                    la conformidad. En su segunda edición, bajo el lema "La precisión invisible que 
-                    protege lo visible", el congreso explora cómo gestionar laboratorios más sólidos, 
-                    generar resultados confiables e innovar frente a los retos del futuro.
-                </p>
+
+    <!-- SECCIÓN PRINCIPAL (El Cuadro) -->
+    <main>
+
+        <section class="container my-5 text-center bg-white">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="lead text-secondary fs-5" style="text-align: justify; text-align-last: center;">
+                        QUALYLAB 2026 es el encuentro que reúne a directivos,
+                        responsables de calidad, profesionales técnicos e investigadores
+                        del sector salud, acreditación y evaluación de la conformidad. En
+                        su segunda edición, bajo el lema "La precisión invisible que
+                        protege lo visible", el congreso explora cómo gestionar
+                        laboratorios más sólidos, generar resultados confiables e innovar
+                        frente a los retos del futuro.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+
+        <!-- SECCIÓN 1: FECHAS Y PILARES -->
+        <section class="container my-5 text-center">
+            <!-- Títulos principales -->
+            <div class="mb-5">
+                <h2 class="titulo-fechas text-info fw-bold lh-1 mb-1">del 26 al 28<br>de Octubre</h2>
+                <h3 class="fw-bold text-dark">En modalidad virtual</h3>
+            </div>
+
+            <!-- Fila de las 3 imágenes -->
+            <div class="row justify-content-center g-4 mt-3">
+
+                <!-- Pilar 1: Gestionar -->
+                <div class="col-10 col-md-4">
+                    <div class="tarjeta-pilar">
+                        <img src="/src/img/pexels-pavel-danilyuk-8439002.jpg" alt="Gestionar">
+                        <div class="etiqueta-pilar px-4 py-2">
+                            <span class="font-monument">Gestionar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pilar 2: Confiar -->
+                <div class="col-10 col-md-4">
+                    <div class="tarjeta-pilar">
+                        <img src="/src/img/mathurin-napoly-matnapo-Ab4aZC723II-unsplash.jpg" alt="Confiar">
+                        <div class="etiqueta-pilar px-4 py-2">
+                            <span class="font-monument">Confiar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pilar 3: Innovar -->
+                <div class="col-10 col-md-4">
+                    <div class="tarjeta-pilar">
+                        <img src="/src/img/Image-tketss.jpeg" alt="Innovar">
+                        <div class="etiqueta-pilar px-4 py-2">
+                            <span class="font-monument">Innovar</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: AGENDA (Acordeón) -->
+        <section class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+
+                    <!-- Acordeón de Bootstrap -->
+                    <div class="accordion accordion-flush" id="agendaCongreso">
+
+                        <!-- Item Día 1 -->
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header" id="headingDia1">
+                                <button class="accordion-button custom-accordion-btn text-info fw-bold fs-4 px-0 pb-1"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseDia1"
+                                    aria-expanded="true" aria-controls="collapseDia1">
+                                    <span class="d-flex align-items-baseline gap-2">
+                                        Día 1 <span class="fs-6 opacity-75">GESTIONAR PARA TRANSFORMAR</span>
+                                    </span>
+                                </button>
+                            </h2>
+
+                            <div id="collapseDia1" class="accordion-collapse collapse show"
+                                aria-labelledby="headingDia1" data-bs-parent="#agendaCongreso">
+                                <div class="accordion-body px-0 pt-3">
+                                    <!-- Fecha y Frase -->
+                                    <h3 class="text-dark mb-2 font-monument">26 de octubre</h3>
+                                    <p class="text-secondary small fst-italic mb-5">
+                                        "Un laboratorio excelente no solamente cumple requisitos: sabe hacia dónde
+                                        va,<br>
+                                        cómo gestiona sus riesgos y cómo desarrolla a su gente."
+                                    </p>
+
+                                    <!-- Lista de Horarios -->
+                                    <div class="agenda-lista">
+
+                                        <!-- Horario 1 -->
+                                        <div class="row mb-4 align-items-center">
+                                            <div class="col-4 col-md-3 text-end  fs-5 lh-1 font-monument">
+                                                8:30 a.m.<br>
+                                                9:00 a.m.
+                                            </div>
+                                            <div class="col-8 col-md-9 font-monument">
+                                                <p class="mb-0  fs-6">Inauguración QUALYLAB 2026:<br>Calidad que
+                                                    transforma</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Horario 2 -->
+                                        <div class="row mb-4 align-items-center">
+                                            <div class="col-4 col-md-3 text-end  fs-5 lh-1 font-monument">
+                                                9:00 a.m.<br>
+                                                10:00 a.m.
+                                            </div>
+                                            <div class="col-8 col-md-9">
+                                                <p class="mb-0 fs-6">El laboratorio del futuro: de la
+                                                    conformidad a la excelencia</p>
+                                                <small class="text-secondary">Selene Guzmán Bedolla</small>
+                                            </div>
+                                        </div>
+
+                                        <!-- Horario 3 -->
+                                        <div class="row mb-4 align-items-center">
+                                            <div class="col-4 col-md-3 text-end fs-5 lh-1 font-monument">
+                                                10:00 a.m.<br>
+                                                11:00 a.m.
+                                            </div>
+                                            <div class="col-8 col-md-9">
+                                                <p class="mb-0 fs-6">Liderazgo que transforma: personas, cultura
+                                                    y resultados</p>
+                                                <small class="text-secondary">Selene Guzmán Bedolla</small>
+                                            </div>
+                                        </div>
+
+                                        <!-- Franja de Receso -->
+                                        <div class="franja-receso text-center py-2 mb-4 mx-2">
+                                            RECESO
+                                        </div>
+
+                                        <!-- Horario 4 -->
+                                        <div class="row mb-4 align-items-center">
+                                            <div class="col-4 col-md-3 text-end fs-5 lh-1 font-monument">
+                                                11:30 a.m.<br>
+                                                12:30 p.m.
+                                            </div>
+                                            <div class="col-8 col-md-9">
+                                                <p class="mb-0 fs-6">Riesgos que sí importan: convertir el
+                                                    análisis en decisiones</p>
+                                                <small class="text-secondary">Selene Guzmán Bedolla</small>
+                                            </div>
+                                        </div>
+
+                                        <!-- Puedes seguir agregando más filas (row) igual que la anterior aquí -->
+                                        <!-- SECCIÓN DE TALLERES -->
+
+                                        <!-- TALLER 1 -->
+                                        <div class="bg-taller p-4 p-md-5 mb-4 rounded-4">
+
+                                            <!-- Cabecera: Título y Precio -->
+                                            <div
+                                                class="d-flex flex-column flex-md-row justify-content-between align-items-md-start mb-3">
+                                                <h3 class="font-monument-bold color-teal m-0" style="font-size: 2rem;">
+                                                    TALLER 1</h3>
+
+                                                <div
+                                                    class="bg-teal text-white font-monument-bold px-3 py-1 mt-2 mt-md-0 d-inline-block fs-5">
+                                                    $1 600.00 <span class="font-montserrat"
+                                                        style="font-size: 0.7em;">+IVA</span>
+                                                </div>
+                                            </div>
+
+                                            <!-- Contenido de texto -->
+                                            <div class="font-montserrat text-dark">
+                                                <p class="mb-4 fs-5">
+                                                    Riesgos que generan valor<br>
+                                                    Gestión de riesgos y oportunidades aplicada al laboratorio
+                                                </p>
+
+                                                <p class="mb-0">Duración: 4 horas</p>
+                                                <p class="mb-0">Modalidad: Taller práctico</p>
+                                                <p class="mb-4">Perfil del instructor: Auditor líder / especialista en
+                                                    gestión de riesgos y sistemas de gestión.</p>
+                                            </div>
+
+                                            <!-- Botón Inscríbete -->
+                                            <div class="text-end mt-2">
+                                                <a href="#"
+                                                    class="text-decoration-none color-teal font-monument-bold fs-5 d-inline-flex align-items-center gap-1">
+                                                    Inscríbete
+                                                    <!-- Icono de flecha personalizado -->
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor"
+                                                            stroke-width="2.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- TALLER 2 -->
+                                        <div class="bg-taller p-4 p-md-5 mb-4 rounded-4">
+
+                                            <!-- Cabecera: Título y Precio -->
+                                            <div
+                                                class="d-flex flex-column flex-md-row justify-content-between align-items-md-start mb-3">
+                                                <h3 class="font-monument-bold color-teal m-0" style="font-size: 2rem;">
+                                                    TALLER 2</h3>
+
+                                                <div
+                                                    class="bg-teal text-white font-monument-bold px-3 py-1 mt-2 mt-md-0 d-inline-block fs-5">
+                                                    $1 600.00 <span class="font-montserrat"
+                                                        style="font-size: 0.7em;">+IVA</span>
+                                                </div>
+                                            </div>
+
+                                            <!-- Contenido de texto -->
+                                            <div class="font-montserrat text-dark">
+                                                <p class="mb-4 fs-5">
+                                                    IA para profesionales de laboratorio<br>
+                                                    Herramientas de inteligencia artificial para gestión, análisis y
+                                                    productividad
+                                                </p>
+
+                                                <p class="mb-0">Duración: 4 horas</p>
+                                                <p class="mb-0">Modalidad: Taller demostrativo</p>
+                                                <p class="mb-4">Perfil del instructor: Especialista en inteligencia
+                                                    artificial aplicada a organizaciones científicas/técnicas.</p>
+                                            </div>
+
+                                            <!-- Botón Inscríbete -->
+                                            <div class="text-end mt-2">
+                                                <a href="#"
+                                                    class="text-decoration-none color-teal font-monument-bold fs-5 d-inline-flex align-items-center gap-1">
+                                                    Inscríbete
+                                                    <!-- Icono de flecha personalizado -->
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor"
+                                                            stroke-width="2.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
 
 
 
 
-    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
 
     <!-- Script de Vite y Bootstrap -->
     <script type="module" src="/src/js/app.js"></script>
 </body>
+
 </html>

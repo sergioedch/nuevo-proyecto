@@ -1,26 +1,66 @@
 @import "bootstrap/scss/bootstrap";
 
+// ========================================
+// FUENTES
+// ========================================
 
-// Fondo con imagen y degradado blanco hacia abajo
-.hero-background {
-  // Asegúrate de poner tu imagen real en src/img/fondo-lab.jpg
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0.4) 0%, rgba(255,255,255,1) 90%), url('../img/fondo-lab.jpg');
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  min-height: 80vh;
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
 }
 
-// Menú estilo píldora con fondo rosado claro
-.nav-pildora {
-  background-color: rgba(248, 220, 225, 0.6); // Un tono rosado transparente
-  backdrop-filter: blur(5px); // Efecto cristal
+@font-face {
+    font-family: 'Monument Extended';
+    src: url('../fonts/MonumentExtended-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
-// Ajustes especiales para la caja principal
-.caja-qualylab {
-  // Para que el borde sea súper redondo como en tu imagen
-  border-radius: 2rem !important; 
-  // Efecto cristal para que se note la imagen de fondo pero se lea el texto
-  backdrop-filter: blur(8px); 
+@font-face {
+    font-family: 'Monument Extended';
+    src: url('../fonts/MonumentExtended-Ultrabold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
 }
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-monument {
+    font-family: 'Monument Extended', sans-serif;
+}
+
+.font-monument-bold {
+    font-family: 'Monument Extended', sans-serif;
+    font-weight: 800;
+}
+
+// ========================================
+// VARIABLES DE FUENTES
+// ========================================
+
+$font-montserrat: 'Montserrat', sans-serif;
+$font-monument: 'Monument Extended', sans-serif;
+
+// ========================================
+// ESTILOS GLOBALES
+// ========================================
+
+body {
+    font-family: $font-montserrat;
+}
+
+
+// ========================================
+// COMPONENTES
+// ========================================
+
+@import "navbar";
+@import "index";
+

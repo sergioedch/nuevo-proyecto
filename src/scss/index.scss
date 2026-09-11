@@ -1,0 +1,93 @@
+// Ajustes especiales para la caja principal
+.caja-qualylab {
+  // Para que el borde sea súper redondo como en tu imagen
+  border-radius: 2rem !important; 
+  // Efecto cristal para que se note la imagen de fondo pero se lea el texto
+  backdrop-filter: blur(8px); 
+}
+
+// Variables de color personalizadas basadas en el diseño
+$color-qualylab-blue: #60B6D1;
+$color-qualylab-light-blue: #BBE1EF;
+$color-qualylab-orange: #F5A623; // Para la línea debajo de "Día 1"
+
+// --- SECCIÓN FECHAS ---
+.titulo-fechas {
+  font-size: 4rem; // Ajusta el tamaño según necesites
+  color: $color-qualylab-blue !important;
+  font-family: $font-monument;
+  text-transform: uppercase;
+}
+
+// --- SECCIÓN PILARES ---
+.tarjeta-pilar {
+  position: relative;
+  width: 90%;
+  // Redondeamos todo el contenedor
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1); // Una sombrita opcional
+
+  img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+  }
+
+  // Aquí hacemos el recorte de la esquina para el texto
+  .etiqueta-pilar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #ffffff;
+    border-top-left-radius: 30px; // Esto hace la curva hacia adentro
+    
+    span {
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+// --- SECCIÓN AGENDA ---
+.custom-accordion-btn {
+  background-color: transparent !important;
+  color: $color-qualylab-blue !important;
+  border-bottom: 2px solid $color-qualylab-orange !important;
+  box-shadow: none !important;
+
+  // Cambiar color de la flechita del acordeón (opcional pero profesional)
+  &::after {
+    filter: invert(65%) sepia(21%) saturate(1143%) hue-rotate(152deg) brightness(92%) contrast(87%);
+  }
+}
+
+.agenda-lista {
+  // Ajuste de fuentes para los horarios
+  .fs-5 {
+    font-size: 1.3rem !important;
+  }
+}
+
+.franja-receso {
+  background-color: $color-qualylab-light-blue;
+  color: #1a1a1a;
+  letter-spacing: 2px;
+}
+
+// --- COLORES SECCIÓN TALLERES ---
+.bg-taller {
+    // El azul clarito del fondo de la tarjeta
+    background-color: #BCE2F0; 
+}
+
+.color-teal {
+    // El verde azulado para los textos de "TALLER" e "Inscríbete"
+    color: #388697 !important;
+}
+
+.bg-teal {
+    // El fondo verde azulado para la caja del precio
+    background-color: #388697 !important;
+}
