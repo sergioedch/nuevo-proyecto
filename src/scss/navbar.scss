@@ -29,6 +29,36 @@
     border-radius: 50rem;
   }
 }
+// --- ESTILOS DROPDOWN DE IDIOMA Y NAVEGACIÓN ---
+.navbar {
+  position: relative;
+  z-index: 1050; // Eleva toda la barra de navegación por encima del contenido inferior
+
+  .dropdown-menu {
+    z-index: 1060 !important; // Asegura que la lista de idiomas quede hasta arriba
+    background-color: #ffffff !important; // Fondo blanco sólido para que no transparente nada
+    border-radius: 12px;
+    border-width: 1.5px;
+    padding: 0.5rem;
+    
+    .dropdown-item {
+      font-family: $font-montserrat;
+      border-radius: 8px;
+      padding: 0.4rem 1rem;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: rgba(220, 53, 69, 0.08);
+        color: #dc3545;
+      }
+    }
+  }
+
+  .dropdown-toggle::after {
+    margin-left: 0.4em;
+    vertical-align: middle;
+  }
+}
 
 
 // --- ESTILOS PARA LOS ENLACES DEL MENÚ ---

@@ -62,3 +62,25 @@
 .text-qualylab-purple {
     color: $color-qualylab-purple !important;
 }
+// Checkboxes más grandes y personalizados
+.form-check-input {
+    width: 1.6rem;
+    height: 1.6rem;
+    cursor: pointer;
+    margin-top: 0 !important; 
+    border: 2px solid #adb5bd;
+
+    &:checked {
+        background-color: $color-qualylab-purple;
+        border-color: $color-qualylab-purple;
+    }
+    
+    &:focus {
+        box-shadow: 0 0 0 0.25rem rgba(146, 83, 200, 0.25);
+        border-color: $color-qualylab-purple;
+    }
+}
+.form-check-label {
+    padding-top: 0.15rem; 
+    cursor: pointer;
+}

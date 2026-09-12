@@ -1,40 +1,40 @@
- <nav class="navbar navbar-expand-lg pt-4 mb-2">
+<nav class="navbar navbar-expand-lg pt-4 mb-2">
     <div class="container d-flex justify-content-between align-items-center">
 
         <!-- Logo Izquierda -->
         <a class="navbar-brand" href="#">
             <!-- Reemplaza con la ruta de tu logo -->
-            <img
-                src="/src/img/logo-best.png"
-                alt="BEST" height="50">
+            <img src="/src/img/logo-best.png" alt="BEST" height="50">
         </a>
 
         <!-- Botón hamburguesa para celular -->
-        <button class="navbar-toggler" type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menuNavegacion">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <!-- Menú Central (Píldora) -->
-        <div class="collapse navbar-collapse justify-content-center"
-            id="menuNavegacion">
-           <ul class="navbar-nav nav-pildora px-4 py-3 py-lg-2 align-items-center">
-                <li class="nav-item"><a
-                        class="nav-link fw-bold text-danger"
-                        href="/">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link text-dark"
-                        href="#">Servicios</a></li>
-                <li class="nav-item"><a class="nav-link text-dark"
-                        href="#">EA</a></li>
-                <li class="nav-item"><a class="nav-link text-dark"
-                        href="#">Eventos</a></li>
-                <li class="nav-item"><a class="nav-link text-dark"
-                        href="/contacto.html">Contacto</a></li>
-                <li class="nav-item ms-2">
-                    <span
-                        class="badge rounded-pill border border-danger text-danger bg-transparent p-2">ES
-                        v</span>
+        <div class="collapse navbar-collapse justify-content-center" id="menuNavegacion">
+            <ul class="navbar-nav nav-pildora px-4 py-3 py-lg-2 align-items-center">
+                <li class="nav-item"><a class="nav-link fw-bold text-danger" href="/">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="#">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="#">EA</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="#">Eventos</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="/contacto.html">Contacto</a></li>
+                <!-- Selector de Idioma -->
+                <li class="nav-item dropdown ms-lg-2">
+                    <a class="nav-link dropdown-toggle text-danger fw-bold d-flex align-items-center px-3 py-1 border border-danger rounded-pill shadow-none"
+                        href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        ES
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end border-danger shadow-sm mt-2">
+                        <li><a class="dropdown-item fw-bold text-danger active bg-transparent" href="#">Español (ES)</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-dark" href="#">English
+                                (EN)</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -43,31 +43,21 @@
         <div class="d-none d-lg-block">
             <a href="#" class="text-danger text-decoration-none">
 
-                <svg width="40" height="40" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
+                <svg width="40" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 
                     <!-- Rueda izquierda -->
-                    <circle cx="11" cy="20.5" r="1" fill="none"
-                        stroke="#dc3545" stroke-width="1.3" />
+                    <circle cx="11" cy="20.5" r="1" fill="none" stroke="#dc3545" stroke-width="1.3" />
 
                     <!-- Rueda derecha -->
-                    <circle cx="17" cy="20.5" r="1" fill="none"
-                        stroke="#dc3545" stroke-width="1.3" />
+                    <circle cx="17" cy="20.5" r="1" fill="none" stroke="#dc3545" stroke-width="1.3" />
 
                     <!-- Carrito -->
-                    <path
-                        d="M3 3H5.32a1 1 0 0 1 .93.63L10 13 8.72 15.55A1 1 0 0 0 9.62 17H19"
-                        fill="none"
-                        stroke="#dc3545" stroke-width="1.3"
-                        stroke-linecap="round"
-                        stroke-linejoin="round" />
+                    <path d="M3 3H5.32a1 1 0 0 1 .93.63L10 13 8.72 15.55A1 1 0 0 0 9.62 17H19" fill="none"
+                        stroke="#dc3545" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
 
                     <!-- Canasta -->
-                    <polyline
-                        points="7.2 6 20.8 6 21 6 18.2 13 10 13"
-                        fill="none" stroke="#dc3545"
-                        stroke-width="1.3" stroke-linecap="round"
-                        stroke-linejoin="round" />
+                    <polyline points="7.2 6 20.8 6 21 6 18.2 13 10 13" fill="none" stroke="#dc3545" stroke-width="1.3"
+                        stroke-linecap="round" stroke-linejoin="round" />
 
                 </svg>
 
