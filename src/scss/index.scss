@@ -1,15 +1,31 @@
-// Ajustes especiales para la caja principal
-.caja-qualylab {
-  // Para que el borde sea súper redondo como en tu imagen
-  border-radius: 2rem !important; 
-  // Efecto cristal para que se note la imagen de fondo pero se lea el texto
-  backdrop-filter: blur(8px); 
-}
-
 // Variables de color personalizadas basadas en el diseño
 $color-qualylab-blue: #60B6D1;
 $color-qualylab-light-blue: #BBE1EF;
 $color-qualylab-orange: #F5A623; // Para la línea debajo de "Día 1"
+
+
+.caja-qualylab {
+  position: relative; // Vital para que el hijo absoluto se ancle aquí
+  border-radius: 2rem !important;
+  backdrop-filter: blur(8px);
+  padding: 3rem 3rem 4rem 3rem !important; // Dejamos aire abajo para el texto flotante
+  overflow: visible !important; // ¡Claro! Quitamos el hidden para que pueda salir
+}
+
+.qualylab {
+  position: absolute;
+  bottom: -11px; // Sube o baja este número según qué tan afuera lo quieras
+  left: 50%;
+  transform: translateX(-50%); // Lo centra exactamente a la mitad
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  line-height: 1;
+  padding: 0 1rem; // Un respiro a los lados si usas fondo blanco
+}
+
+.numero-congreso {
+  font-size: 13rem;
+}
 
 // --- SECCIÓN FECHAS ---
 .titulo-fechas {
@@ -19,6 +35,10 @@ $color-qualylab-orange: #F5A623; // Para la línea debajo de "Día 1"
   text-transform: uppercase;
 }
 
+.r2 {
+  font-size: 2rem;
+}
+
 // --- SECCIÓN PILARES ---
 .tarjeta-pilar {
   position: relative;
@@ -26,7 +46,7 @@ $color-qualylab-orange: #F5A623; // Para la línea debajo de "Día 1"
   // Redondeamos todo el contenedor
   border-radius: 40px;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1); // Una sombrita opcional
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); // Una sombrita opcional
 
   img {
     width: 100%;
@@ -42,7 +62,7 @@ $color-qualylab-orange: #F5A623; // Para la línea debajo de "Día 1"
     right: 0;
     background-color: #ffffff;
     border-top-left-radius: 30px; // Esto hace la curva hacia adentro
-    
+
     span {
       font-size: 1.2rem;
       letter-spacing: 1px;
@@ -64,6 +84,7 @@ $color-qualylab-orange: #F5A623; // Para la línea debajo de "Día 1"
 }
 
 .agenda-lista {
+
   // Ajuste de fuentes para los horarios
   .fs-5 {
     font-size: 1.3rem !important;
@@ -78,16 +99,208 @@ $color-qualylab-orange: #F5A623; // Para la línea debajo de "Día 1"
 
 // --- COLORES SECCIÓN TALLERES ---
 .bg-taller {
-    // El azul clarito del fondo de la tarjeta
-    background-color: #BCE2F0; 
+  // El azul clarito del fondo de la tarjeta
+  background-color: #BCE2F0;
 }
 
 .color-teal {
-    // El verde azulado para los textos de "TALLER" e "Inscríbete"
-    color: #388697 !important;
+  // El verde azulado para los textos de "TALLER" e "Inscríbete"
+  color: #388697 !important;
 }
 
 .bg-teal {
-    // El fondo verde azulado para la caja del precio
-    background-color: #388697 !important;
+  // El fondo verde azulado para la caja del precio
+  background-color: #388697 !important;
+}
+
+
+// --- COLORES DÍA 2 (MORADO) ---
+$color-qualylab-purple: #9253C8; // Morado principal para textos
+$color-qualylab-light-purple: #D7C4F2; // Morado clarito para receso y taller
+
+.custom-accordion-btn-purple {
+  background-color: transparent !important;
+  color: $color-qualylab-purple !important;
+  border-bottom: 2px solid $color-qualylab-orange !important;
+  box-shadow: none !important;
+
+  // Dibujamos la flecha con el SVG en color morado exacto
+  &::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%239253C8'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708 z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+  }
+
+  // Rotación suave cuando el acordeón se abre y pierde la clase .collapsed
+  &:not(.collapsed)::after {
+    transform: rotate(-180deg);
+  }
+}
+
+.franja-receso-purple {
+  background-color: $color-qualylab-light-purple;
+  color: #1a1a1a;
+  letter-spacing: 2px;
+}
+
+.bg-taller-purple {
+  background-color: $color-qualylab-light-purple;
+}
+
+.color-purple {
+  color: $color-qualylab-purple !important;
+}
+
+.bg-purple {
+  background-color: $color-qualylab-purple !important;
+}
+
+
+// --- COLORES DÍA 3 (VERDE / INNOVAR) ---
+$color-qualylab-green: #3B8263; // Verde principal para textos
+$color-qualylab-light-green: #D2E7DC; // Verde clarito para receso
+
+.custom-accordion-btn-green {
+  background-color: transparent !important;
+  color: $color-qualylab-green !important;
+  border-bottom: 2px solid $color-qualylab-orange !important;
+  box-shadow: none !important;
+
+  // Flechita con SVG en color verde exacto
+  &::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%233B8263'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+  }
+
+  // Rotación suave al abrirse
+  &:not(.collapsed)::after {
+    transform: rotate(-180deg);
+  }
+}
+
+.franja-receso-green {
+  background-color: $color-qualylab-light-green;
+  color: #1a1a1a;
+  letter-spacing: 2px;
+}
+
+
+// --- SECCIÓN LEMA PANTALLA COMPLETA (FULL-WIDTH) ---
+.lema-full-screen {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  min-height: 500px;
+  // Tu foto de fondo de los laboratorios
+  background-image: url('../img/national-cancer-institute-XknuBmnjbKg-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  // Evita que los garabatos generen barra de desplazamiento horizontal
+  overflow: hidden;
+}
+
+// Velo blanco semitransparente
+.lema-overlay {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+// Marco interior que respira un poco de los bordes de la pantalla
+.lema-marco {
+  top: 2rem;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2.1rem;
+  border-radius: 1.5rem;
+  pointer-events: none;
+
+  @media (max-width: 768px) {
+    top: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+  }
+}
+
+// Tipografía grande y limpia
+.frase-lema {
+  font-size: clamp(2rem, 4.5vw, 3.8rem);
+  letter-spacing: -1px;
+}
+
+// Posicionamiento de los garabatos en los extremos de la pantalla
+.doodle-lema-morado {
+  bottom: -10px;
+  left: 1rem;
+  width: 130px;
+
+  @media (max-width: 768px) {
+    width: 80px;
+    left: 0;
+  }
+}
+
+.doodle-lema-verde {
+  top: -10px;
+  right: 1rem;
+  width: 110px;
+
+  @media (max-width: 768px) {
+    width: 70px;
+    right: 0;
+  }
+}
+
+// --- SECCIÓN ALIADOS ESTRATÉGICOS ---
+.logo-aliado {
+  max-height: 120px;
+  width: auto;
+  object-fit: contain;
+}
+
+// --- SECCIÓN PAQUETES Y PRECIOS ---
+.card-paquete {
+  background-color: #BCE2F0; // El azul clarito característico de las tarjetas
+  border-radius: 1.5rem;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px); // Sutil efecto flotante al pasar el mouse
+  }
+}
+
+.titulo-paquetes {
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+}
+
+// Color específico para los iconos de flecha de los paquetes
+.icono-flecha {
+    color: #2E8DA3 !important;
+}
+.precio-tarjeta {
+  color: #2E8DA3;
+  font-size: 1.5rem;
+}
+
+.texto-contacto-final {
+  font-size: 1.2rem;
+  line-height: 1.6;
 }

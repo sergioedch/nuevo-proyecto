@@ -1,0 +1,26 @@
+// --- FOOTER ---
+.site-footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer-logo {
+    max-height: 75px;
+    width: auto;
+    object-fit: contain;
+}
+
+// Filtro para convertir la imagen blanca en negro puro
+.logo-best {
+    filter: brightness(0);
+}
+
+.footer-legal {
+    a {
+        transition: color 0.2s ease;
+        &:hover {
+            color: #388697 !important;
+            text-decoration: underline !important;
+        }
+    }
+}
