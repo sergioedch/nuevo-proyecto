@@ -45,19 +45,19 @@
 
                     <!-- Tarjeta Blanca del Formulario -->
                     <div class="form-contacto-card p-4 p-md-5 position-relative">
-                        <form>
+                        <form id="formContacto">
 
                             <!-- Inputs de Texto -->
                             <div class="mb-4">
-                                <input type="text" class="form-control input-contacto py-2 fw-bold" placeholder="Nombre"
+                                <input type="text" class="form-control input-contacto py-2 fw-bold" name="nombre" placeholder="Nombre"
                                     required>
                             </div>
                             <div class="mb-4">
-                                <input type="email" class="form-control input-contacto py-2 fw-bold"
+                                <input type="email" class="form-control input-contacto py-2 fw-bold" name="correo"
                                     placeholder="Correo electrónico" required>
                             </div>
                             <div class="mb-5">
-                                <input type="tel" class="form-control input-contacto py-2 fw-bold"
+                                <input type="tel" class="form-control input-contacto py-2 fw-bold" name="telefono"
                                     placeholder="Teléfono" required>
                             </div>
 
@@ -77,7 +77,7 @@
                             <!-- OPCIÓN 1: Conferencias -->
                             <div class="mb-4 p-3 rounded-3 bg-white">
                                 <div class="form-check align-items-start d-flex gap-3">
-                                    <input class="form-check-input mt-1" type="checkbox" value="conferencias"
+                                    <input class="form-check-input mt-1" type="checkbox" name="tipo_acceso[]" value="conferencias"
                                         id="opcionConferencias">
                                     <label class="form-check-label font-montserrat" for="opcionConferencias">
                                         <span
@@ -98,7 +98,7 @@
                             <!-- OPCIÓN 2: Talleres - Congreso -->
                             <div class="mb-4 p-3 rounded-3 bg-white">
                                 <div class="form-check align-items-start d-flex gap-3 mb-3">
-                                    <input class="form-check-input mt-1" type="checkbox" value="talleres"
+                                    <input class="form-check-input mt-1" type="checkbox" value="talleres" name="tipo_acceso[]"
                                         id="opcionTalleres">
 
                                     <!-- Contenedor para texto y select -->
@@ -132,7 +132,7 @@
                             <!-- OPCIÓN 3: Talleres + Conferencias -->
                             <div class="mb-4 p-3 rounded-3 bg-white">
                                 <div class="form-check align-items-start d-flex gap-3 mb-3">
-                                    <input class="form-check-input mt-1" type="checkbox" value="ambos" id="opcionAmbos">
+                                    <input class="form-check-input mt-1" type="checkbox" value="ambos" name="tipo_acceso[]" id="opcionAmbos">
 
                                     <!-- Contenedor para texto y select -->
                                     <div class="w-100">
@@ -163,7 +163,7 @@
 
                             <!-- Acepto Términos y Condiciones -->
                             <div class="mb-4 form-check d-flex justify-content-end align-items-center gap-2">
-                                <input class="form-check-input" type="checkbox" value id="terminos" required>
+                                <input class="form-check-input" type="checkbox" value="aceptado" id="terminos" name="terminos" required>
                                 <label class="form-check-label font-montserrat" for="terminos">
                                     Acepto términos y condiciones.
                                 </label>
@@ -171,7 +171,7 @@
 
                             <!-- Botón de Envío -->
                             <div class="text-center pt-2">
-                                <button type="submit"
+                                <button type="submit" id="btnEnviar"
                                     class="btn btn-enviar-contacto font-montserrat fw-bold py-2 px-5 rounded-pill">
                                     ENVIAR
                                 </button>
