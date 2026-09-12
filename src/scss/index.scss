@@ -293,8 +293,9 @@ $color-qualylab-light-green: #D2E7DC; // Verde clarito para receso
 
 // Color específico para los iconos de flecha de los paquetes
 .icono-flecha {
-    color: #2E8DA3 !important;
+  color: #2E8DA3 !important;
 }
+
 .precio-tarjeta {
   color: #2E8DA3;
   font-size: 1.5rem;
@@ -303,4 +304,127 @@ $color-qualylab-light-green: #D2E7DC; // Verde clarito para receso
 .texto-contacto-final {
   font-size: 1.2rem;
   line-height: 1.6;
+}
+
+
+
+
+
+
+// --- SECCIÓN PERFIL / PONENTE (DRA. SELENE) ---
+.perfil-fondo {
+  background-image: url('../img/national-cancer-institute-XknuBmnjbKg-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+}
+
+.card-perfil {
+  z-index: 2;
+  border: 3px solid #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden !important;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.foto-contenedor {
+  transition: all 0.6s ease-in-out;
+}
+
+.foto-selene {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 1.5rem !important;
+  transition: transform 0.6s ease, max-height 0.6s ease;
+}
+
+.texto-biografia {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+// Botón X interactivo personalizado
+.btn-cerrar-perfil {
+  background: #f8f9fa;
+  border: 2px solid #388697;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, transform 0.4s ease;
+  z-index: 10;
+
+  &:hover {
+    background: #388697;
+    transform: rotate(90deg) scale(1.1);
+
+    span {
+      background-color: #ffffff;
+    }
+  }
+
+  span {
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background-color: #388697;
+    transition: background 0.3s ease;
+
+    &:first-child {
+      transform: rotate(45deg);
+    }
+
+    &:last-child {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+// Estado animado: La foto se expande y tapa el texto por completo
+.card-perfil.panel-oculto {
+  .texto-biografia {
+    opacity: 0;
+    transform: translateX(40px);
+    pointer-events: none;
+    display: none; // Oculta el espacio para que la foto domine
+  }
+
+  .columna-foto {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .foto-selene {
+    max-height: 450px;
+    transform: scale(1.02);
+  }
+}
+
+.doodle-perfil-morado {
+  top: -25px;
+  left: -25px;
+  width: 100px;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.doodle-perfil-verde {
+  top: -25px;
+  right: 50px;
+  width: 90px;
+  pointer-events: none;
+  z-index: 3;
 }

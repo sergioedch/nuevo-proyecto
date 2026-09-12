@@ -1,17 +1,58 @@
 // Fondo con imagen y degradado blanco hacia abajo
 .hero-background {
   // Asegúrate de poner tu imagen real en src/img/fondo-lab.jpg
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0.4) 0%, rgba(255,255,255,1) 90%), url('../src/img/Image_ts04kets04kets04.png');
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 1) 90%), url('../src/img/Image_ts04kets04kets04.png');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
   min-height: 80vh;
 }
 
-// Menú estilo píldora con fondo rosado claro
+// Menú responsivo
 .nav-pildora {
   font-family: $font-montserrat;
-  background-color: rgba(248, 220, 225, 0.6); // Un tono rosado transparente
-  backdrop-filter: blur(5px); // Efecto cristal
+  background-color: rgba(248, 220, 225, 0.95);
+  backdrop-filter: blur(8px);
+  width: 100%;
+  margin-top: 1rem;
+  
+  // En MÓVIL / PANTALLAS CHICAS: caja con esquinas suaves (no píldora)
+  border-radius: 12px;
+
+  // En ESCRITORIO (a partir de 992px, el breakpoint lg de Bootstrap):
+  @media (min-width: 992px) {
+    width: auto;
+    background-color: rgba(248, 220, 225, 0.6);
+    margin-top: 0;
+    
+    // Aquí sí es píldora completa
+    border-radius: 50rem;
+  }
 }
 
+
+// --- ESTILOS PARA LOS ENLACES DEL MENÚ ---
+.nav-pildora .nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+    padding-bottom: 0.2rem;
+
+    // Estilo cuando el enlace está activo
+    &.active {
+        color: #dc3545 !important; // Mantiene el color rojo
+        font-weight: bold !important;
+
+        // La línea que aparece debajo
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70%; // Ancho de la línea
+            height: 2px; // Grosor de la línea
+            background-color: #dc3545; // Color de la línea (rojo)
+            border-radius: 2px;
+        }
+    }
+}

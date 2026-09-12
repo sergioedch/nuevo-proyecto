@@ -7,92 +7,13 @@
         <title>QUALYLAB 2026 - BEST</title>
     </head>
 
-    <body class="bg-light">
+    <body class="bg-white">
 
         <!-- Contenedor con la imagen de fondo y el degradado -->
         <div class="hero-background pb-5">
 
             <!-- BARRA DE NAVEGACIÓN -->
-            <nav class="navbar navbar-expand-lg pt-4 mb-5">
-                <div
-                    class="container d-flex justify-content-between align-items-center">
-
-                    <!-- Logo Izquierda -->
-                    <a class="navbar-brand" href="#">
-                        <!-- Reemplaza con la ruta de tu logo -->
-                        <img
-                            src="https://www.bestreference.com.mx/imgs/logo-best.png"
-                            alt="BEST" height="50">
-                    </a>
-
-                    <!-- Botón hamburguesa para celular -->
-                    <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#menuNavegacion">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <!-- Menú Central (Píldora) -->
-                    <div class="collapse navbar-collapse justify-content-center"
-                        id="menuNavegacion">
-                        <ul
-                            class="navbar-nav nav-pildora px-4 py-2 rounded-pill align-items-center">
-                            <li class="nav-item"><a
-                                    class="nav-link fw-bold text-danger"
-                                    href="#">Inicio</a></li>
-                            <li class="nav-item"><a class="nav-link text-dark"
-                                    href="#">Servicios</a></li>
-                            <li class="nav-item"><a class="nav-link text-dark"
-                                    href="#">EA</a></li>
-                            <li class="nav-item"><a class="nav-link text-dark"
-                                    href="#">Eventos</a></li>
-                            <li class="nav-item"><a class="nav-link text-dark"
-                                    href="#">Contacto</a></li>
-                            <li class="nav-item ms-2">
-                                <span
-                                    class="badge rounded-pill border border-danger text-danger bg-transparent p-2">ES
-                                    v</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Icono Carrito Derecha (Oculto en celular para mantener el diseño) -->
-                    <div class="d-none d-lg-block">
-                        <a href="#" class="text-danger text-decoration-none">
-
-                            <svg width="40" height="40" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-
-                                <!-- Rueda izquierda -->
-                                <circle cx="11" cy="20.5" r="1" fill="none"
-                                    stroke="#dc3545" stroke-width="1.3" />
-
-                                <!-- Rueda derecha -->
-                                <circle cx="17" cy="20.5" r="1" fill="none"
-                                    stroke="#dc3545" stroke-width="1.3" />
-
-                                <!-- Carrito -->
-                                <path
-                                    d="M3 3H5.32a1 1 0 0 1 .93.63L10 13 8.72 15.55A1 1 0 0 0 9.62 17H19"
-                                    fill="none"
-                                    stroke="#dc3545" stroke-width="1.3"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round" />
-
-                                <!-- Canasta -->
-                                <polyline
-                                    points="7.2 6 20.8 6 21 6 18.2 13 10 13"
-                                    fill="none" stroke="#dc3545"
-                                    stroke-width="1.3" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-
-                            </svg>
-
-                        </a>
-                    </div>
-
-                </div>
-            </nav>
+            <load src="/src/components/navbar.html" />
             <!-- HEADER / CAJA PRINCIPAL -->
             <header class="container">
                 <div class="row justify-content-center">
@@ -1262,54 +1183,96 @@
 
         </section>
 
-        <!-- PIE DE PÁGINA (FOOTER) -->
-        <footer class="site-footer py-5 mt-5">
-            <div class="container text-center">
+        <!-- SECCIÓN PERFIL DE PONENTE -->
+        <section class="container-fluid perfil-fondo py-5 position-relative mb-0">
+            <div class="container py-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
 
-                <!-- Fila de logotipos institucionales -->
-                <div
-                    class="row justify-content-center align-items-center g-5 mb-4">
+                        <!-- Tarjeta blanca flotante con ID para el control de JS -->
+                        <div
+                            class="card-perfil bg-white rounded-4 p-4 p-md-5 position-relative"
+                            id="cardPerfil">
 
-                    <!-- Logo Guzmán (Reemplaza la ruta si ya lo tienes) -->
-                    <div class="col-auto">
-                        <img src="/src/img/logo-guzman.png"
-                            alt="Guzmán Soluciones Integrales en Capacitación"
-                            class="footer-logo">
+                            <!-- Botón X interactivo -->
+                            <button type="button"
+                                class="btn-cerrar-perfil position-absolute top-0 end-0 m-4 shadow-none"
+                                id="btnTogglePerfil"
+                                aria-label="Cerrar / Mostrar">
+                                <span></span>
+                                <span></span>
+                            </button>
+
+                            <!-- Garabatos decorativos -->
+                            <img src="/src/img/doodle-morado.png"
+                                class="doodle-perfil-morado position-absolute d-none d-md-block"
+                                alt>
+                            <img src="/src/img/doodle-verde.png"
+                                class="doodle-perfil-verde position-absolute d-none d-md-block"
+                                alt>
+
+                            <div class="row align-items-center g-4">
+
+                                <!-- Columna Izquierda: Fotografía -->
+                                <div class="col-md-4 text-center columna-foto">
+                                    <div class="p-2 foto-contenedor">
+                                        <img src="/src/img/11.jpg"
+                                            alt="Dra. Selene Guzmán Bedolla"
+                                            class="img-fluid foto-selene shadow-sm">
+                                    </div>
+                                </div>
+
+                                <!-- Columna Derecha: Información y Semblanza -->
+                                <div
+                                    class="col-md-8 font-montserrat texto-biografia">
+                                    <h3
+                                        class="font-monument text-dark mb-1 fs-3">Dra.
+                                        Selene Guzmán Bedolla</h3>
+                                    <p
+                                        class="text-secondary fw-semibold mb-3">Doctora
+                                        en ciencias administrativas</p>
+
+                                    <p
+                                        class="text-secondary fs-6 mb-0 text-justify">
+                                        Profesional comprometida con la mejora
+                                        continua, la calidad y la gestión
+                                        organizacional. Cuenta con un doctorado
+                                        en Ciencias Administrativas y más de 15
+                                        años de experiencia en el sector salud,
+                                        especializándose en seguridad,
+                                        innovación y sistemas de gestión de
+                                        calidad. Actualmente se desempeña como
+                                        Gerente de Seguridad en el Laboratorio
+                                        Estatal de Salud Pública de Michoacán,
+                                        donde ha liderado proyectos estratégicos
+                                        en dirección, planeación y control de
+                                        calidad. Además, ha sido docente de
+                                        nivel superior y posgrado, compartiendo
+                                        su conocimiento en instituciones como el
+                                        INIDEM y la UNID. Su enfoque combina
+                                        liderazgo, trabajo en equipo y una
+                                        visión orientada al crecimiento
+                                        profesional y social.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
                     </div>
-
-                    <!-- Logo Best Reference -->
-                    <!-- Logo Best Reference -->
-                    <div class="col-auto">
-                        <img src="/src/img/Best.png"
-                            alt="Best Reference Proveedor de Ensayos de Aptitud"
-                            class="footer-logo logo-best">
-                    </div>
-
                 </div>
-
-                <!-- Textos legales y enlaces -->
-                <div class="footer-legal font-montserrat text-secondary small">
-                    <p class="mb-1">
-                        Copyright &copy; Best Reference. Todos los derechos
-                        reservados.
-                    </p>
-                    <p class="mb-0">
-                        <a href="#"
-                            class="text-decoration-none text-secondary">Aviso de
-                            privacidad</a>
-                        <span class="mx-1">|</span>
-                        <a href="#"
-                            class="text-decoration-none text-secondary">Términos
-                            y condiciones</a>
-                    </p>
-                </div>
-
             </div>
-        </footer>
+        </section>
+
+        <!-- PIE DE PÁGINA (FOOTER) -->
+       <load src="/src/components/footer.html" />
         <!--   </main>
  -->
         <!-- Script de Vite y Bootstrap -->
         <script type="module" src="/src/js/app.js"></script>
+        <script type="module" src="/src/js/principal.js"></script>
+        <script type="module" src="/src/js/navbar.js"></script>
     </body>
 
 </html>
