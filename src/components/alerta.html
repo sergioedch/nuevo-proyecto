@@ -1,0 +1,63 @@
+<!-- MODAL DE ÉXITO (Oculto por defecto) -->
+<div class="modal fade" id="modalExito" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 border-0 shadow-lg">
+            <div class="modal-body text-center p-5">
+                
+                <!-- Ícono de Palomita (Teal) -->
+                <div class="mb-4">
+                    <svg width="80" height="80" viewBox="0 0 133 133" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="66.5" cy="66.5" r="66.5" fill="#388697" fill-opacity="0.2"/>
+                        <circle cx="66.5" cy="66.5" r="50" fill="#388697"/>
+                        <path d="M55 70L63 78L82 54" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+                <!-- Textos -->
+                <h3 class="font-monument text-dark mb-3">¡Registro Exitoso!</h3>
+                <p class="text-secondary font-montserrat fs-5 mb-4">
+                    Tus datos se enviaron correctamente. Te contactaremos pronto.
+                </p>
+
+                <!-- Botón para cerrar -->
+                <button type="button" class="btn font-montserrat fw-bold py-2 px-5 rounded-pill text-white" 
+                        data-bs-dismiss="modal" style="background-color: #388697; letter-spacing: 1px;">
+                    GENIAL
+                </button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL DE ERROR (Oculto por defecto) -->
+<div class="modal fade" id="modalError" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 border-0 shadow-lg">
+            <div class="modal-body text-center p-5">
+                
+                <!-- Ícono de Tachita (Rojo) -->
+                <div class="mb-4">
+                    <svg width="80" height="80" viewBox="0 0 133 133" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="66.5" cy="66.5" r="66.5" fill="#dc3545" fill-opacity="0.2"/>
+                        <circle cx="66.5" cy="66.5" r="50" fill="#dc3545"/>
+                        <path d="M48 48L85 85M85 48L48 85" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+                <!-- Textos -->
+                <h3 class="font-monument text-dark mb-3">¡Algo salió mal!</h3>
+                <p class="text-secondary font-montserrat fs-5 mb-4" id="textoError">
+                    Tuvimos un problema al procesar tu solicitud. Intenta de nuevo.
+                </p>
+
+                <!-- Botón para cerrar -->
+                <button type="button" class="btn font-montserrat fw-bold py-2 px-5 rounded-pill text-white" 
+                        data-bs-dismiss="modal" style="background-color: #dc3545; letter-spacing: 1px;">
+                    ENTENDIDO
+                </button>
+
+            </div>
+        </div>
+    </div>
+</div>
