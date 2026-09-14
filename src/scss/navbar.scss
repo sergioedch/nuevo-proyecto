@@ -15,7 +15,7 @@
   backdrop-filter: blur(8px);
   width: 100%;
   margin-top: 1rem;
-  
+
   // En MÓVIL / PANTALLAS CHICAS: caja con esquinas suaves (no píldora)
   border-radius: 12px;
 
@@ -24,23 +24,46 @@
     width: auto;
     background-color: rgba(248, 220, 225, 0.6);
     margin-top: 0;
-    
+
     // Aquí sí es píldora completa
     border-radius: 50rem;
   }
 }
+
 // --- ESTILOS DROPDOWN DE IDIOMA Y NAVEGACIÓN ---
 .navbar {
-  position: relative;
-  z-index: 1050; // Eleva toda la barra de navegación por encima del contenido inferior
+  z-index: 1050;
+
+  // 1. ESTADOS INICIALES (Para evitar el parpadeo negro)
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+
+  // 2. TRANSICIÓN ESPECÍFICA (Mejor que 'all')
+  transition: background-color 0.3s ease,
+    padding 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    backdrop-filter 0.3s ease;
+
+  // NUEVO: Clase que se activa al bajar la página (Efecto cristal premium)
+  &.navbar-scrolled {
+    background-color: rgba(255, 255, 255, 0.65) !important; // Un pelín más transparente
+    backdrop-filter: blur(15px); // Más blur para que se vea bien esmerilado
+    -webkit-backdrop-filter: blur(15px);
+
+    // El secreto del efecto cristal:
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); // Brillo en el borde inferior
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.03); // Sombra súper expandida y casi invisible
+  }
 
   .dropdown-menu {
-    z-index: 1060 !important; // Asegura que la lista de idiomas quede hasta arriba
-    background-color: #ffffff !important; // Fondo blanco sólido para que no transparente nada
+    z-index: 1060 !important;
+    background-color: #ffffff !important;
     border-radius: 12px;
     border-width: 1.5px;
     padding: 0.5rem;
-    
+
     .dropdown-item {
       font-family: $font-montserrat;
       border-radius: 8px;
@@ -63,26 +86,26 @@
 
 // --- ESTILOS PARA LOS ENLACES DEL MENÚ ---
 .nav-pildora .nav-link {
-    position: relative;
-    transition: all 0.3s ease;
-    padding-bottom: 0.2rem;
+  position: relative;
+  transition: all 0.3s ease;
+  padding-bottom: 0.2rem;
 
-    // Estilo cuando el enlace está activo
-    &.active {
-        color: #dc3545 !important; // Mantiene el color rojo
-        font-weight: bold !important;
+  // Estilo cuando el enlace está activo
+  &.active {
+    color: #dc3545 !important; // Mantiene el color rojo
+    font-weight: bold !important;
 
-        // La línea que aparece debajo
-        &::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 70%; // Ancho de la línea
-            height: 2px; // Grosor de la línea
-            background-color: #dc3545; // Color de la línea (rojo)
-            border-radius: 2px;
-        }
+    // La línea que aparece debajo
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%; // Ancho de la línea
+      height: 2px; // Grosor de la línea
+      background-color: #dc3545; // Color de la línea (rojo)
+      border-radius: 2px;
     }
+  }
 }
