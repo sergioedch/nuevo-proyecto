@@ -1,11 +1,11 @@
 // Fondo con imagen y degradado blanco hacia abajo
 .hero-background {
-  // Asegúrate de poner tu imagen real en src/img/fondo-lab.jpg
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 1) 90%), url('../src/img/Image_ts04kets04kets04.png');
+  // Asegúrate de poner tu imagen real en src/img/fondo-lab.webp
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 1) 90%), url('../src/img/Image_ts04kets04kets04.webp');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  min-height: 80vh;
+
 }
 
 // Menú responsivo

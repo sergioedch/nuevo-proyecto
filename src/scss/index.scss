@@ -229,7 +229,7 @@ $color-qualylab-light-green: #D2E7DC;
   margin-left: -50vw;
   margin-right: -50vw;
   min-height: 500px;
-  background-image: url('../img/national-cancer-institute-XknuBmnjbKg-unsplash.jpg');
+  background-image: url('../img/national-cancer-institute-XknuBmnjbKg-unsplash.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -262,6 +262,7 @@ $color-qualylab-light-green: #D2E7DC;
 }
 
 .doodle-lema-morado {
+  animation: flotar 4s ease-in-out infinite;
   bottom: -10px;
   left: 1rem;
   width: 130px;
@@ -273,6 +274,7 @@ $color-qualylab-light-green: #D2E7DC;
 }
 
 .doodle-lema-verde {
+  animation: flotar 4s ease-in-out infinite;
   top: -10px;
   right: 1rem;
   width: 110px;
@@ -342,9 +344,9 @@ $color-qualylab-light-green: #D2E7DC;
   line-height: 1.6;
 }
 
-// --- SECCIÓN PERFIL / PONENTE (DRA. SELENE) ---
+// --- SECCIÓN PERFIL 
 .perfil-fondo {
-  background-image: url('../img/national-cancer-institute-XknuBmnjbKg-unsplash.jpg');
+  background-image: url('../img/national-cancer-institute-XknuBmnjbKg-unsplash.webp');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -365,7 +367,6 @@ $color-qualylab-light-green: #D2E7DC;
   border: 3px solid #ffffff;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 
-  // CAMBIO CLAVE AQUÍ: Permite que los doodles sobresalgan del marco
   overflow: visible !important;
 
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
@@ -393,13 +394,26 @@ $color-qualylab-light-green: #D2E7DC;
   left: -25px;
   width: 100px;
   pointer-events: none;
-  z-index: 10; // Asegura que quede completamente sobrepuesto
+  z-index: 10;
 }
 
 .doodle-perfil-verde {
+  animation: flotar 4s ease-in-out infinite;
   top: -25px;
   right: 50px;
   width: 90px;
   pointer-events: none;
-  z-index: 10; // Asegura que quede completamente sobrepuesto
+  z-index: 10;
+}
+
+// 1. Creas la animación
+@keyframes flotar {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+// 2. Se la aplicas a tu clase
+.garabato-azul {
+  animation: flotar 4s ease-in-out infinite;
 }
